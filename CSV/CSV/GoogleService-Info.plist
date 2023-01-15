@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>855397755940-0jc21lfoitvkt84u6q0d55qd6kpsk6kt.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.855397755940-0jc21lfoitvkt84u6q0d55qd6kpsk6kt</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD1V8bP-CHVeZVgXDKN1-mmOMDzPtJrFr4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>855397755940</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>ro.silfurpunktur.CSV</string>
+	<key>PROJECT_ID</key>
+	<string>testfirebasedatabasesilfur</string>
+	<key>STORAGE_BUCKET</key>
+	<string>testfirebasedatabasesilfur.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:855397755940:ios:5d2f36fc10b62f3c76bcb1</string>
+</dict>
+</plist>

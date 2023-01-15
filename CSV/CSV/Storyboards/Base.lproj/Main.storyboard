@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IaV-Qs-aFm">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="CSV" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="oIp-Fa-eOm">
+                                <rect key="frame" x="0.0" y="120.99999999999997" width="393" height="406.33333333333326"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HP0-9Q-fLS">
+                                        <rect key="frame" x="118.00000000000001" y="0.0" width="157.33333333333337" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OmI-eJ-NR4">
+                                        <rect key="frame" x="130.66666666666669" y="50.333333333333343" width="131.66666666666669" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Generate CSV"/>
+                                        <connections>
+                                            <action selector="GenerateCSVFile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a7o-YU-TPk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o3z-d0-BNr">
+                                        <rect key="frame" x="118.00000000000001" y="114.66666666666664" width="157.33333333333337" height="34.333333333333329"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Go to Import CSV"/>
+                                        <connections>
+                                            <action selector="importCSV:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e1I-fh-Dut"/>
+                                            <segue destination="6f5-j1-f4S" kind="show" id="tzX-r9-dwg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Q6-RJ-c2c">
+                                        <rect key="frame" x="98" y="179" width="197" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Go to Firestore screen "/>
+                                        <connections>
+                                            <segue destination="kp6-oh-KVz" kind="show" identifier="goForward" id="hV9-pY-Cyl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjv-oS-o0A">
+                                        <rect key="frame" x="44.333333333333343" y="243.33333333333334" width="304.33333333333326" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Go to Firestore with numbers screen "/>
+                                        <connections>
+                                            <segue destination="QIu-Hl-qcT" kind="show" id="G84-EH-Hy6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rrQ-5H-aRu">
+                                        <rect key="frame" x="60.666666666666657" y="307.66666666666669" width="271.66666666666674" height="34.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Go to Firestore Add Data screen "/>
+                                        <connections>
+                                            <segue destination="naq-Ql-28r" kind="show" id="dd3-04-lwq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8Q-SV-5sQ">
+                                        <rect key="frame" x="69.333333333333329" y="372" width="254.66666666666669" height="34.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Go to a SwiftUI User Interface "/>
+                                        <connections>
+                                            <segue destination="O1D-Yq-ERC" kind="presentation" id="W6B-1B-Qoo"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oIp-Fa-eOm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1TS-XO-eMx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oIp-Fa-eOm" secondAttribute="trailing" id="Z47-L9-LJl"/>
+                            <constraint firstItem="oIp-Fa-eOm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="qd0-qj-0Ng"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="d9w-FQ-T1B"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="982.44274809160299" y="3.5211267605633805"/>
+        </scene>
+        <!--Firestore View Controller-->
+        <scene sceneID="zZi-ml-gnV">
+            <objects>
+                <viewController id="kp6-oh-KVz" customClass="FirestoreViewController" customModule="CSV" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zfr-3R-T2d">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="DMZ-43-BsC">
+                                <rect key="frame" x="0.0" y="121" width="393" height="604"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Firestore View Controller (buttons will stop working on the 13th of Jan 2023" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V7Y-yM-JcT">
+                                        <rect key="frame" x="55" y="0.0" width="283" height="61"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSy-PC-44j">
+                                        <rect key="frame" x="55" y="91" width="283" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="7ef-v8-86v"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Add data to Firestore (hardcoded)"/>
+                                        <connections>
+                                            <action selector="addFirestoreDataBtn:" destination="kp6-oh-KVz" eventType="touchUpInside" id="aWH-IO-vQz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B98-S6-ocI">
+                                        <rect key="frame" x="55" y="171" width="283" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="jsC-KE-HdB"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Get data from Firestore (hardcoded)"/>
+                                        <connections>
+                                            <action selector="getFirestoreDataBtn:" destination="kp6-oh-KVz" eventType="touchUpInside" id="F4S-1H-DzT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gpl-1x-SKn">
+                                        <rect key="frame" x="55" y="251" width="283" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="BQ1-Vt-Czr"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Filter and get data from Firestore (hardcoded)"/>
+                                        <connections>
+                                            <action selector="filterFirestoreDataBtn:" destination="kp6-oh-KVz" eventType="touchUpInside" id="jwG-6S-IXb"/>
+                                            <action selector="getFirestoreDataBtn:" destination="kp6-oh-KVz" eventType="touchUpInside" id="rcN-6C-2ge"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nha-rU-ivw">
+                                        <rect key="frame" x="55" y="331" width="283" height="273"/>
+                                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="273" id="bKA-sd-giE"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="B98-S6-ocI" secondAttribute="trailing" constant="55" id="83y-vV-vQn"/>
+                                    <constraint firstAttribute="trailing" secondItem="VSy-PC-44j" secondAttribute="trailing" constant="55" id="Any-uC-866"/>
+                                    <constraint firstItem="Gpl-1x-SKn" firstAttribute="leading" secondItem="DMZ-43-BsC" secondAttribute="leading" constant="55" id="KLE-4A-mMO"/>
+                                    <constraint firstItem="VSy-PC-44j" firstAttribute="leading" secondItem="DMZ-43-BsC" secondAttribute="leading" constant="55" id="Krz-5S-hLy"/>
+                                    <constraint firstItem="nha-rU-ivw" firstAttribute="leading" secondItem="DMZ-43-BsC" secondAttribute="leading" constant="55" id="dJc-wm-ndT"/>
+                                    <constraint firstAttribute="trailing" secondItem="nha-rU-ivw" secondAttribute="trailing" constant="55" id="i76-l5-fzR"/>
+                                    <constraint firstItem="V7Y-yM-JcT" firstAttribute="leading" secondItem="DMZ-43-BsC" secondAttribute="leading" constant="55" id="iHH-Yo-RDG"/>
+                                    <constraint firstItem="B98-S6-ocI" firstAttribute="leading" secondItem="DMZ-43-BsC" secondAttribute="leading" constant="55" id="j9P-qY-kxy"/>
+                                    <constraint firstAttribute="trailing" secondItem="V7Y-yM-JcT" secondAttribute="trailing" constant="55" id="lax-qH-bhW"/>
+                                    <constraint firstAttribute="trailing" secondItem="Gpl-1x-SKn" secondAttribute="trailing" constant="55" id="mVM-Qd-qMQ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="F04-Ej-RJk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DMZ-43-BsC" firstAttribute="top" secondItem="F04-Ej-RJk" secondAttribute="top" constant="18" id="3Kk-sj-ja9"/>
+                            <constraint firstItem="DMZ-43-BsC" firstAttribute="leading" secondItem="F04-Ej-RJk" secondAttribute="leading" id="8qB-Av-ar2"/>
+                            <constraint firstItem="F04-Ej-RJk" firstAttribute="trailing" secondItem="DMZ-43-BsC" secondAttribute="trailing" id="HnS-7s-DvE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="PZZ-KA-CoR"/>
+                    <connections>
+                        <outlet property="textFieldForFirestoreData" destination="nha-rU-ivw" id="BvY-mj-Hnd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c5N-yh-ZzM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2221" y="-835"/>
+        </scene>
+        <!--Firestore Add Data View Controller-->
+        <scene sceneID="Yxd-rI-pgG">
+            <objects>
+                <viewController id="naq-Ql-28r" customClass="FirestoreAddDataViewController" customModule="CSV" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ngg-a2-yKU">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="https://www.youtube.com/watch?v=R3Wp1PWh70c" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3h-Dd-3LK">
+                                <rect key="frame" x="10" y="169" width="373" height="40.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IoP-e7-z0r"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="j3h-Dd-3LK" secondAttribute="trailing" constant="10" id="Ai5-VY-ul4"/>
+                            <constraint firstItem="j3h-Dd-3LK" firstAttribute="top" secondItem="IoP-e7-z0r" secondAttribute="top" constant="66" id="V9l-Pb-1I4"/>
+                            <constraint firstItem="j3h-Dd-3LK" firstAttribute="leading" secondItem="IoP-e7-z0r" secondAttribute="leading" constant="10" id="XPc-0O-pyH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ixG-Ht-fXh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gfz-HU-SJZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2221" y="763"/>
+        </scene>
+        <!--Page2 SwiftUI View Controller-->
+        <scene sceneID="rQn-Gf-mKP">
+            <objects>
+                <viewController id="O1D-Yq-ERC" customClass="Page2SwiftUIViewController" customModule="CSV" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0PX-pF-0TN">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tt7-xB-Sbh">
+                                <rect key="frame" x="-1" y="0.0" width="392" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="SwiftUI Based View Controller" id="7id-kI-umM">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="gMZ-bt-ZLw">
+                                            <connections>
+                                                <segue destination="rjM-f2-W1B" kind="unwind" unwindAction="unwindToHomeVCWithSender:" id="iCR-y7-XEw"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SKt-mJ-ePR">
+                                <rect key="frame" x="0.0" y="53" width="393" height="730"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4Ve-sx-oDW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="theContainer" destination="SKt-mJ-ePR" id="HBu-SH-Ia8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8vH-Cz-gJd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="rjM-f2-W1B" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="982" y="763"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bOS-ch-WVP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IaV-Qs-aFm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Qml-IZ-TlY">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="VgA-U2-OvW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dcK-ey-OXc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="55.725190839694655" y="3.5211267605633805"/>
+        </scene>
+        <!--Firestore View Controller With Number-->
+        <scene sceneID="z3j-Iw-Qso">
+            <objects>
+                <viewController id="QIu-Hl-qcT" customClass="FirestoreViewControllerWithNumber" customModule="CSV" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="daq-3d-Eca">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="lcL-Ft-imq">
+                                <rect key="frame" x="0.0" y="121" width="393" height="604"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Firestore View Controller  With Numbers (buttons will stop working on the 13th of Jan 2023" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGV-fn-7IN">
+                                        <rect key="frame" x="55" y="0.0" width="283" height="61"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edM-aH-WND">
+                                        <rect key="frame" x="55" y="91" width="283" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="vwD-jQ-H42"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Add data to Firestore (hardcoded)"/>
+                                        <connections>
+                                            <action selector="addDataToFirestoreWithNumber:" destination="QIu-Hl-qcT" eventType="touchUpInside" id="3EK-cT-PjR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFW-1a-kT0">
+                                        <rect key="frame" x="55" y="171" width="283" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="wRJ-wG-rXK"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Get data from Firestore (hardcoded)"/>
+                                        <connections>
+                                            <action selector="getDataToFirestoreWithNumber:" destination="QIu-Hl-qcT" eventType="touchUpInside" id="ad2-fM-lih"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Jb-62-v45">
+                                        <rect key="frame" x="55" y="251" width="283" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="nS5-qK-5oJ"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Filter and get data from Firestore (hardcoded)"/>
+                                        <connections>
+                                            <action selector="filterDataToFirestoreWithNumber:" destination="QIu-Hl-qcT" eventType="touchUpInside" id="H3n-4J-LGp"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VOB-Cy-w4A">
+                                        <rect key="frame" x="55" y="331" width="283" height="273"/>
+                                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="273" id="0Bo-qJ-12m"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="JGV-fn-7IN" firstAttribute="leading" secondItem="lcL-Ft-imq" secondAttribute="leading" constant="55" id="542-lU-nqZ"/>
+                                    <constraint firstItem="7Jb-62-v45" firstAttribute="leading" secondItem="lcL-Ft-imq" secondAttribute="leading" constant="55" id="5pC-sG-ZWL"/>
+                                    <constraint firstAttribute="trailing" secondItem="edM-aH-WND" secondAttribute="trailing" constant="55" id="BK1-gY-OKQ"/>
+                                    <constraint firstItem="edM-aH-WND" firstAttribute="leading" secondItem="lcL-Ft-imq" secondAttribute="leading" constant="55" id="HCd-xA-mya"/>
+                                    <constraint firstAttribute="trailing" secondItem="7Jb-62-v45" secondAttribute="trailing" constant="55" id="Iez-jg-mQq"/>
+                                    <constraint firstAttribute="trailing" secondItem="VOB-Cy-w4A" secondAttribute="trailing" constant="55" id="Snf-dF-dqD"/>
+                                    <constraint firstItem="VOB-Cy-w4A" firstAttribute="leading" secondItem="lcL-Ft-imq" secondAttribute="leading" constant="55" id="VTJ-Y9-Avr"/>
+                                    <constraint firstAttribute="trailing" secondItem="JGV-fn-7IN" secondAttribute="trailing" constant="55" id="bAr-1u-mE5"/>
+                                    <constraint firstItem="EFW-1a-kT0" firstAttribute="leading" secondItem="lcL-Ft-imq" secondAttribute="leading" constant="55" id="hm4-6z-XGd"/>
+                                    <constraint firstAttribute="trailing" secondItem="EFW-1a-kT0" secondAttribute="trailing" constant="55" id="qc1-tX-wgr"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bH0-nf-Jmy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lcL-Ft-imq" firstAttribute="top" secondItem="bH0-nf-Jmy" secondAttribute="top" constant="18" id="BMI-xf-gF1"/>
+                            <constraint firstItem="lcL-Ft-imq" firstAttribute="leading" secondItem="bH0-nf-Jmy" secondAttribute="leading" id="Pow-xf-AXk"/>
+                            <constraint firstItem="bH0-nf-Jmy" firstAttribute="trailing" secondItem="lcL-Ft-imq" secondAttribute="trailing" id="rpT-NN-IvV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="f3o-Mu-85s"/>
+                    <connections>
+                        <outlet property="textFieldForFirestoreDataWithNumber" destination="VOB-Cy-w4A" id="CCo-Fo-stj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5zR-qa-x3P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2221" y="4"/>
+        </scene>
+        <!--Csv To Text Field View Controller-->
+        <scene sceneID="wpr-Im-9ZT">
+            <objects>
+                <viewController id="6f5-j1-f4S" customClass="CsvToTextFieldViewController" customModule="CSV" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R37-bA-ZQJ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="BLS-wi-qu7">
+                                <rect key="frame" x="0.0" y="121.00000000000003" width="393" height="448.66666666666674"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ygY-o1-5TZ">
+                                        <rect key="frame" x="55" y="0.0" width="283" height="81.333333333333329"/>
+                                        <string key="text">Load data from csv into Text Field (nu uita sa creezi fisierul csv inainte, folosind butonul Generate CSV din mainViewController)</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3HI-0x-zeT">
+                                        <rect key="frame" x="141" y="111.33333333333333" width="111.33333333333331" height="34.333333333333329"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Import CSV"/>
+                                        <connections>
+                                            <action selector="importCsvToTextFieldBtn:" destination="6f5-j1-f4S" eventType="touchUpInside" id="y8U-ch-jH9"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bKf-Nq-pWJ">
+                                        <rect key="frame" x="55" y="175.66666666666669" width="283" height="273"/>
+                                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="273" id="k80-ri-Lkd"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ygY-o1-5TZ" secondAttribute="trailing" constant="55" id="6Ug-Gf-RiV"/>
+                                    <constraint firstAttribute="trailing" secondItem="bKf-Nq-pWJ" secondAttribute="trailing" constant="55" id="7LN-R9-FLx"/>
+                                    <constraint firstItem="ygY-o1-5TZ" firstAttribute="leading" secondItem="BLS-wi-qu7" secondAttribute="leading" constant="55" id="SsH-kC-gXz"/>
+                                    <constraint firstItem="bKf-Nq-pWJ" firstAttribute="leading" secondItem="BLS-wi-qu7" secondAttribute="leading" constant="55" id="cag-MS-Fqc"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rJJ-Yc-kvC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BLS-wi-qu7" firstAttribute="top" secondItem="rJJ-Yc-kvC" secondAttribute="top" constant="18" id="Bzg-Si-21A"/>
+                            <constraint firstItem="rJJ-Yc-kvC" firstAttribute="trailing" secondItem="BLS-wi-qu7" secondAttribute="trailing" id="SHV-wu-7di"/>
+                            <constraint firstItem="BLS-wi-qu7" firstAttribute="leading" secondItem="rJJ-Yc-kvC" secondAttribute="leading" id="bPv-2Z-2aI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="qWs-K9-Fkg"/>
+                    <connections>
+                        <outlet property="textFieldForCsv" destination="bKf-Nq-pWJ" id="sUd-La-JpF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="00U-SK-pkj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1012.9770992366412" y="-834.50704225352115"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
